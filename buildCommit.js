@@ -22,6 +22,7 @@ module.exports = function buildCommit(answers, config) {
   }
 
   function addSubject(subject) {
+     if (!subject) return '';
     return subject.trim();
   }
 
